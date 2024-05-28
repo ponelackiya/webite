@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .first, .second, .third, .fourth{
+        float: left;
+        width: 30%;
+        padding: 10px;
+        height:400px;
+        margin-top: 8%;
+        margin-left: 13%;
+        background-color: beige;
+        }
+        #slider {
+        overflow: hidden;
+    }
+    @keyframes slider {
+        0% { left: 0; }
+        30% { left: 0; }
+        33% { left: -100%; }
+        63% { left: -100%; }
+        66% { left: -200%; }
+        95% { left: -200%; }
+        100% { left: 0; }
+    }
+    #slider figure {
+        width:100%;
+        position: relative;
+        animation: 9s slider infinite;
+    }
+    #slider figure img {
+        width: 45%;
+        height :500px;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <figure>
+        <box class="first">
+            <img src="c.png">
+        </box>
+        <box class="second">
+            <img src="ca.png">
+        </box>
+        <box class="third">
+            <img src="ch.png">
+        </box>
+        <box class="fourth">
+            <img src="cr.png">
+        </box>
+        </figure>
+    </div>
+</body>
+</html>
